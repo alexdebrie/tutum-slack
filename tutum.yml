@@ -1,0 +1,14 @@
+slack:
+    image: alexdebrie/tutum-slack:latest
+    restart: always
+    roles:
+     - global
+    environment:
+     - SLACK_URL='**REPLACE**'
+     - VERBOSE=True
+     - STACK=''
+     - SERVICE=''
+     - CONTAINER=''
+     - NODE_CLUSTER=''
+     - NODE=''
+     - ACTION=''
