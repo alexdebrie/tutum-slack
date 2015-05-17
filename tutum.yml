@@ -4,11 +4,11 @@ slack:
     roles:
      - global
     environment:
-     - SLACK_URL='**REPLACE**'
+     - SLACK_URL=**REPLACE**
      - VERBOSE=True
-     - STACK=''
-     - SERVICE=''
-     - CONTAINER=''
-     - NODE_CLUSTER=''
-     - NODE=''
-     - ACTION=''
+     - STACK=none
+     - SERVICE=none
+     - CONTAINER=none
+     - NODE_CLUSTER=none
+     - NODE=none
+     - ACTION=none

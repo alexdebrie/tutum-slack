@@ -27,8 +27,10 @@ include a comma-separated list of states that you would like to monitor.
 For example, if i would like to know when a Service is "stopped" or "terminated",
 or when a Node is "deployed", I would set the environment variables as follows:
 
-    SERVICE="stopped,terminated"
-    NODE="deployed"
+    SERVICE=stopped,terminated
+    NODE=deployed
+
+*Note: Do not put quotation marks in your environment variables*
 
 Check out the [Tutum API documentation](https://docs.tutum.co/v2/api/) for more
 information on the different types and states to monitor. You can also look at

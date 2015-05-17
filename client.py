@@ -19,14 +19,15 @@ def on_message(ws, message):
     msg_as_JSON = json.loads(message)
     type = msg_as_JSON.get("type")
     state = msg_as_JSON.get("state").lower()
-    print type, state
     if type:
         if type == "auth":
             if VERBOSE:
                 print "Auth completed"
         elif state in CONF[type]:
+            print 'sending....'
             resource_uri = msg_as_JSON.get("resource_uri")
             r = slack_event(type, state, resource_uri)
+            print r.status_code
             if VERBOSE:
                 print message
         elif state not in CONF[type]:
